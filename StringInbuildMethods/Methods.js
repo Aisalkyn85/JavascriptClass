@@ -1,0 +1,33 @@
+/*
+at(position)    text.charAt(0)
+charAt(position) 
+charCodeAt(position)
+slice(start, end)
+substring(start, end)
+substr(start, length)
+toLowerCase()
+toUpperCase()
+concat()
+trim()
+trimStart()
+trimEnd()
+padStart()
+padEnd()
+match()
+indexOf()
+lastIndexOf()
+split()
+search()*/
+let str = " Application Programming       "
+let str1 = "System"
+console.log(str.charAt(3))
+console.log(str.charAt(5))
+console.log(str.charCodeAt(0))
+console.log(str.concat(str1))
+console.log(str.trim ())
+console.log(str.trimStart(str))
+console.log(str.padEnd())
+let word = "ab"
+console.log(word.padEnd(5,"Aba"))
+console.log(str.match("a"))
+console.log(str.search("Application"))

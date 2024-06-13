@@ -1,0 +1,76 @@
+/* let arr = ["Apple", "Cucumber", "Onion", "lamb"];
+let wordLengths = [];
+let numberOfWord = arr.length; //4
+let sumOfLength = 0;
+let total = 0;
+index = 0
+
+for (let i = 0; i < arr.length; i++) {
+  sumOfLength += arr[i].length;
+}
+
+total = sumOfLength / numberOfWord;
+console.log(total);
+
+
+
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i].length <= total) {
+    wordLengths[index] = arr[i]; // Assign the word directly
+    index++
+  }
+}
+console.log( wordLengths);
+
+  */
+
+let arr = ["Apple", "Cucumber", "Onion", "lamb"];
+let wordLengths = [];
+let numberOfWord = arr.length; //4
+let sumOfLength = 0;
+let total = 0;
+let index = 0;
+
+
+for (let i = 0; i < arr.length; i++) {
+  sumOfLength += arr[i].length;
+}
+
+total = sumOfLength / numberOfWord;
+
+let round = Math.floor(total);
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i].length === round) {
+    wordLengths[index] = arr[i]; 
+    index++;
+  }
+}
+
+console.log(wordLengths);
+
+/* The Math.floor function in JavaScript is a built-in function that returns the largest integer less than 
+or equal to a given number. Essentially, it rounds a number down to the nearest integer.
+Here’s how it works:
+If you pass a positive decimal number, Math.floor will round it down to the nearest whole number.
+If you pass a negative decimal number, Math.floor will round it down (towards negative infinity) to the nearest whole number. */
+
+Math.floor(x)
+console.log(Math.floor(5.5));   // Output: 5
+console.log(Math.floor(4.9));   // Output: 4
+console.log(Math.floor(-2.1));  // Output: -3
+console.log(Math.floor(-2.9));  // Output: -3 
+
+/* In JavaScript, there is no Math.abc function. The function you are likely referring to is Math.abs.
+Math.abs is a built-in function in JavaScript that returns the absolute value of a number, 
+which means it converts negative numbers to their positive counterparts and leaves positive numbers unchanged.
+
+ */
+Math.abs(x)
+console.log(Math.abs(5));    // Output: 5
+console.log(Math.abs(-5));   // Output: 5
+console.log(Math.abs(0));    // Output: 0
+console.log(Math.abs(-2.7)); // Output: 2.7
+
+
